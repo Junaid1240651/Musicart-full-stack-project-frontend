@@ -262,7 +262,17 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 21px;
-
     color: #000000;
+  }
+  .prev {
+    border: none;
+    font-size: 20px;
+    background: #ffb800;
+  }
+  .next {
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    background: #ffb800;
   }
 }

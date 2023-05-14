@@ -348,9 +348,13 @@ const ProductDetailPage = () => {
                     className="slide-image"
                   />
                   <div>
-                    <button onClick={prevSlide}>Prev</button>
+                    <button className="prev" onClick={prevSlide}>
+                      🡠
+                    </button>
 
-                    <button onClick={nextSlide}>Next</button>
+                    <button className="next" onClick={nextSlide}>
+                      🡢
+                    </button>
                   </div>
                 </div>
                 <div>
