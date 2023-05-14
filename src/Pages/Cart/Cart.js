@@ -54,11 +54,11 @@ const Cart = () => {
         }
       )
       .then(function (response) {
-        if (response) {
+      
           setLoading2(false);
 
           navigate("/checkout");
-        }
+        
       })
       .catch((err) => {
         alert(err.message);
