@@ -46,7 +46,6 @@ const Cart = () => {
   };
   const placeOrderHandler = () => {
     setLoading2(true);
-    navigate("/checkout");
     axios
       .post(
         "https://musicart-full-stack-project-backend.onrender.com/checkOutProduct",
