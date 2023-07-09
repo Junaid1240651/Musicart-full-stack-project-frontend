@@ -46,7 +46,6 @@ const Cart = () => {
   };
   const placeOrderHandler = () => {
     setLoading2(true);
-    navigate("/checkout");
 
     axios
       .post(
