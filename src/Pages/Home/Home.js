@@ -30,7 +30,7 @@ const Home = () => {
   const [inputSearch, setinputSearch] = useState([]);
   const [userEmail, setUserEmail] = useState();
   const { getCartItem } = FetchCartProduct();
-
+  // var apidata;
   const isAuthenticated = useSelector(
     (state) => state.authentications?.isAuthenticated || ""
   );
@@ -51,7 +51,7 @@ const Home = () => {
           setApiData(response.data);
           setLoading(true);
         })
-        .catch((error) => alert.error(error + "Server Error"));
+        .catch((error) => alert(error + "Server Error"));
     } catch (error) {
       console.log(error);
     }
@@ -124,7 +124,7 @@ const Home = () => {
             </div>
             <div className="searchDiv">
               <div className="search">
-                <img src={searchImage} />
+                <img alt="" src={searchImage} />
                 <input
                   onChange={inputSearchHandler}
                   placeholder="Search You Headphone Here"
