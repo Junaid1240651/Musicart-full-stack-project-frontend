@@ -44,8 +44,9 @@ const Cart = () => {
         alert(err.message);
       });
   };
-  const placeOrderHandler = () => {
+	  const placeOrderHandler = () => {
     setLoading2(true);
+    navigate("/checkout");
     axios
       .post(
         "https://musicart-full-stack-project-backend.onrender.com/checkOutProduct",
@@ -54,11 +55,10 @@ const Cart = () => {
         }
       )
       .then(function (response) {
-      
+        if (response) {
           setLoading2(false);
-
           navigate("/checkout");
-        
+        }
       })
       .catch((err) => {
         alert(err.message);
